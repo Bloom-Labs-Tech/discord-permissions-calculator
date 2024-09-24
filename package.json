@@ -1,0 +1,43 @@
+{
+  "name": "@bloomlabs/permission-calculator",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "description": "",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "build": "tsup",
+    "prepublishOnly": "bun run build",
+    "test": "bun test"
+  },
+  "files": ["dist"],
+  "keywords": ["bloomlabs", "discord", "permissions", "discord-permissions", "permission-calculator"],
+  "license": "MIT",
+  "homepage": "https://github.com/Bloom-Labs-Tech/permissions-calculator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bloom-Labs-Tech/permissions-calculator.git"
+  },
+  "bugs": "https://github.com/Bloom-Labs-Tech/permissions-calculator/issues",
+  "author": "Bloomlabs <support@bloomlabs.me>",
+  "devDependencies": {
+    "@biomejs/biome": "1.4.1",
+    "@types/bun": "latest",
+    "dts-bundle-generator": "^9.5.1",
+    "semantic-release": "^22.0.12",
+    "tsup": "^8.2.3",
+    "typescript": "^5.5.4"
+  },
+  "release": {
+    "branches": ["main"]
+  }
+}
